@@ -1,9 +1,17 @@
 $(document).ready(function() {
-  $("#form1").submit(function(event) {
+  $("#formOne").submit(function(event) {
     const nameInput = $("input#name").val();
+    const mulletInput = $("#mullet").val();
+    const radioInput = $("input[name='driver']:checked").val();
+    const result=("My name is "+nameInput+" and my favorite mullets are " + mulletInput + " and the best driver is " + radioInput+".")
+    $("#output").text(result);
 
-  $(".name").append(nameInput);
-  
+
+  $("#survey").show();
+
   event.preventDefault();
+
   });
 });
+
+

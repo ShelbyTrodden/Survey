@@ -2,28 +2,53 @@
 <html lang="en-US">
 <head>
   <title>Survey</title>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href= "css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0"></script>
   <script src="js/scripts.js"></script>
 </head>
 <body>
+  <div class = "container">
   <h1>Survey</h1>
-  <form id="form1">
+  <form id="formOne">
     <div class="form-group">
-      <label for="name">A name</label>
+      <label for="name">Type your name</label>
       <input id="name" class="form-control" type="text">
     </div>
-    <form id="form2">
       <div class="form-group">
         <h3>Favorite Mullets</h3>
-        <select class="form-control" id="beverage">
-          <option>Joe Dirt</option>
-          <option>P</option>
-          <option>Kombucha</option>
-          <option>Water</option>
+        <select class="form-control" id="mullet">
+          <option>Joe Dirt mullets</option>
+          <option>perm mullets</option>
+          <option>soccer mullets</option>
+          <option>Kenney Powers mullets</option>
         </select>
       </div>
-    </form>
+    <div class="radio">
+      <h3>Favorite Nascar Driver</h3>
+      <label>
+        <input type="radio" name="driver" value="Dick Trickle" checked>
+        Dick Trickle
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="driver" value="Ricky Bobby">
+        Ricky Bobby
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="driver" value="Jeff Gordon">
+        Jeff Gordon
+      </label>
+    </div>
+    <button type="submit" class="btn">Click here to see results!</button>
+    <div id = "output">
+    </div>
+  </form>
+    <div id="survey">
+</div>
+
 </body>
-</html>
+</html> 
